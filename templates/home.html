@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AiDonaldt</title>
+      <link rel="stylesheet" type="text/css" href="/static/theme.css">
+  </head>
+  <body background="/static/hero_marine_one.jpg">
+    <div class="container">
+        <h1>Automatic Trump Tweet Generator</h1>
+        <p>Enter what ever news headline or any phrase into the box and our trump bot will print out his response</p>
+        <label for="headline">Enter a breaking news headline:</label><br>
+        <input type="text" id="headline" name="headline"><br>
+        <button onclick="get_tweet();">Get Tweet</button><br>
+        <label for="response" id="responseLabel"></label><br>
+        <output type="text" id="response" name="response"><br>
+    </div>
+    <div class="bottomBar">This project was made for UC Revolution 2020</div>
+    <script type="text/javascript">
+      function get_tweet() {
+        var req = new XMLHttpRequest();
+        
+        req.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("response").innerHTML = this.responseText;
+                document.getElementById("responseLabel").innerHTML = "Trump's Tweet:";
+            }
+        };
+        
+        document.getElementById("responseLabel").innerHTML = "Contacting the White House...";
+        req.open('GET', '/get-tweet?headline=' + document.getElementById("headline").value, true);
+        req.send();
+      }
+    </script>
+  </body>
+</html>

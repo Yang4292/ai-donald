@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+body {
+    background-size:cover;
+    font-size:1.5rem;
+}
+
+.container {
+    background-color: white;
+    margin: 5rem auto 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    opacity: .75;
+    border-radius:15px;
+
+}
+
+input {
+    padding:15px;
+    border-radius:5px;
+    width:80%;
+    border: 1px grey solid;
+    font-size:1.5rem;
+}
+
+button {
+    padding:10px 20px 10px 20px;
+    font-weight:bold;
+    font-size:2rem;
+    border-radius:5px;
+    outline: none;
+}
+
+button, input, #responseLabel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding:10px 20px 10px 20px;
+    font-weight:900;
+    font-size:2rem;
+    border-radius:5px;
+    outline: none;
+    background-image: url('merica.png'); 
+    color:white;
+    opacity:1;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.bottomBar {
+    position:fixed;
+    height:2rem;
+    background-color:#213875;
+    border-top:2px solid lightgrey;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    color:lightgrey;
+    padding:10px;
+    font-size:1.2rem;
+}
+h1 {
+    color:#213875;
+}

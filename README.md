@@ -25,4 +25,5 @@ Possible improvement:
 reference:
     The process in model building refers techniques shown on this website: https://www.tensorflow.org/tutorials/text/text_generation
     The picture of background refers to picture: https://assets.donaldjtrump.com/2017/web/hero_images/hero_marine_one.jpg
+    The training text come from: rev.com
     
